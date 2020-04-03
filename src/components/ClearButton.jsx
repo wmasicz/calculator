@@ -1,10 +1,10 @@
 import React, { Component } from 'react';
-import './SumButton.scss'
+import './ClearButton.scss'
 
-export default class SumButton extends Component {
+export default class ClearButton extends Component {
     render() {
         return (
-            <div className="sum" onClick={this.props.handleClear}>
+            <div className="clear" onClick={this.props.handleClear}>
                 {this.props.children}
             </div>
         )

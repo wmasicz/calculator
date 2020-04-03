@@ -2,10 +2,9 @@ import React, { Component } from 'react';
 import './Button.scss';
 
 
-
 export class Button extends Component {
-    operator = val => {
-        return !isNaN(val) || val === "." || val === "=";
+    operator = value => {
+        return !isNaN(value) || value === "." || value === "=";
     }
 
     render() {

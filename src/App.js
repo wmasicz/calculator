@@ -1,8 +1,9 @@
 import React, { Component } from 'react';
 import { Button } from './components/Button';
-import './App.scss';
-import SumButton from './components/SumButton';
+import ClearButton from './components/ClearButton';
 import Input from './components/Input';
+
+import './App.scss';
 
 import * as math from 'mathjs';
 
@@ -12,7 +13,7 @@ export default class App extends Component {
     input: ""
   };
 
-  count = (value) => {
+  count = value => {
     this.setState({
       input: this.state.input + value
     })
@@ -56,9 +57,9 @@ export default class App extends Component {
             <Button handleClick={this.count}>/</Button>
           </div>
           <div className="row">
-            <SumButton handleClear={()=> this.setState({input: ""})}>
+            <ClearButton handleClear={()=> this.setState({input: ""})}>
               C
-            </SumButton>
+            </ClearButton>
           </div>
         </div>
       </div>
